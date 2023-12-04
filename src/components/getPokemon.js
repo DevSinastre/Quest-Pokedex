@@ -7,7 +7,10 @@ import { ThemeContext } from "../contexts/themeContext"
 
 async function CreateListPokemon(count) {
     const createListPokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${count}.`)
-    const response = await createListPokemon.json()
+    const createListPokemon2 = await fetch(`https://pokeapi.co/api/v2/pokemon`)
+    const response2 = await createListPokemon2.json();
+    console.log(await response2);
+    const response = await createListPokemon.json();
     return response.results
 }
 
@@ -83,7 +86,14 @@ const GetPokemon = () => {
     return (
         <Section style={{ color: theme.color, backgroundColor: theme.background, transition: theme.transition  }}>
             <Pokemons pokemons={pokemonList.pokemon} />
-            <Button onClick={() => setCount(count + 10)}>Load more</Button>
+            <Button onClick={() => {
+                if(count <= 1282){
+                    setCount(count + 10)
+                }
+                else{
+                    setCount(1292)
+                }
+            }}>Load more</Button>
         </Section>
     )
 }

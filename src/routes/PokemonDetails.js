@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react"
 import styled from 'styled-components'
-import imagem from '../assets/basic-card-background.png'
+import imagem from '../assets/basic-card-background4.png'
 
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/themeContext";
@@ -28,7 +28,7 @@ const PokemonDetails = (props) => {
             {
                 props.pokemonDetails.types.map((tipo, index) => {
                     return (
-                        <Type key={index}>{tipo.type.name}</Type>
+                        <p key={index}>{tipo.type.name}</p>
                     )
                 })
             }
@@ -58,6 +58,10 @@ const PokemonDetails = (props) => {
                         })
                     }
                 </Ability>
+
+                <Number>
+                    Nº: {props.pokemonDetails.id}
+                </Number>
             </Details>
 
             {/* <Button onClick={handlePokemons}>Voltar</Button> */}
@@ -153,9 +157,6 @@ const Types = styled.div`
     justify-content: space-around;
 `
 
-const Type = styled.p`
-    color: white;
-`
 const P = styled.p`
     font-size: 20px;
     position: relative;
@@ -187,6 +188,14 @@ const Ability = styled.div`
     font-size: 12px;
     width: 50%;
 `
+
+const Number = styled.p`
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+`
+
 const Button = styled.button`
     width: 100px;
     padding: 5px;
