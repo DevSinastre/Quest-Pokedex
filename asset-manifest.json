@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Quest-Pokedex/static/css/main.478dafa7.css",
+    "main.js": "/Quest-Pokedex/static/js/main.33fb8c68.js",
+    "static/media/International_Pokemon_logo.png": "/Quest-Pokedex/static/media/International_Pokemon_logo.d777aa7af9c7c709dd41.png",
+    "static/media/basic-card-background4.png": "/Quest-Pokedex/static/media/basic-card-background4.ecb3d2c161dd4ea326eb.png",
+    "index.html": "/Quest-Pokedex/index.html",
+    "main.478dafa7.css.map": "/Quest-Pokedex/static/css/main.478dafa7.css.map",
+    "main.33fb8c68.js.map": "/Quest-Pokedex/static/js/main.33fb8c68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.478dafa7.css",
+    "static/js/main.33fb8c68.js"
+  ]
+}
