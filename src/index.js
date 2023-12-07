@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import GetPokemon from './components/GetPokemon';
+import GetAllPokemons from './routes/GetAllPokemons';
 import PokemonDetails from './routes/PokemonDetails';
 import ErrorPage from './routes/ErrorPage';
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <GetPokemon />,
+        element: <GetAllPokemons />,
       },
       {
         path: '/:id',
