@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import GetAllPokemons from './routes/GetAllPokemons';
+import GetPokemon from './components/GetPokemon';
 import PokemonDetails from './routes/PokemonDetails';
 import ErrorPage from './routes/ErrorPage';
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <GetAllPokemons />,
+        element: <GetPokemon />,
       },
       {
         path: '/:id',
@@ -30,7 +30,6 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
   </React.StrictMode>
 );
