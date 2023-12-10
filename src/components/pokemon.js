@@ -44,7 +44,6 @@ const PokemonsList = () => {
                 vetor.push(r)
             }
             
-            console.log(vetor)
             setPokemon({
                 pokemons: vetor
             })
