@@ -9,3 +9,6 @@
 - Abra o VSCode e a pasta com o projeto que foi clonado;
 - Abra o terminal e digite: npm install;
 - Logo após serem instalados todos os módulos, digite: npm start;
+
+- site para consulta react + githubpages
+- https://www.freecodecamp.org/portuguese/news/como-fazer-o-deploy-de-uma-aplicacao-do-react-com-rotas-no-github-pages/
