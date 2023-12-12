@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        path: '/pokemon',
         element: <GetAllPokemons />,
       },
       {
-        path: '/pokemons/:id',
+        path: '/pokemon/:id',
         element: <PokemonDetails />
       }
     ]
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+
       <RouterProvider router={router} />
-    </BrowserRouter>
+
   </React.StrictMode>
 );

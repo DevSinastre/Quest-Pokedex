@@ -25,7 +25,7 @@ const Pokemons = (props) => {
                         return (
 
                             <Li key={index}>
-                                <Link to={'/' + pokemon.id}>
+                                <Link to={'/pokemon/' + pokemon.id}>
                                     <Div style={{ color: theme.color, backgroundColor: theme.backgroundColor, transition: theme.transition }}>
                                         <p>{pokemon.name}</p>
                                         <Img src={pokemon.sprites.front_default} alt={'Imagem do Pokemon: ' + pokemon.name}></Img>

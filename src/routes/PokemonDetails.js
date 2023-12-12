@@ -80,7 +80,7 @@ const Pokemon = () => {
     const navigate = useNavigate();
 
     const handlePokemons = () => {
-        return navigate('/');
+        return navigate('/pokemon');
     }
 
     useEffect(() => {
