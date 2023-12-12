@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        path: '/pokemons',
         element: <GetAllPokemons />,
       },
       {
-        path: '/:id',
+        path: '/pokemons/:id',
         element: <PokemonDetails />
       }
     ]
